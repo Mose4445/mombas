@@ -2,15 +2,16 @@ title{ text-align: center;
 font-size: large;
 font-style: normal;
 }
-body{background-color: white;
-font-weight: normal;
-margin: auto;
-box-shadow: none;
+
+body{background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-position: 0cap;
+    background-attachment: fixed;
+    background-size: cover;
 }
 h1{text-align: center;
 font-size: medium;
 font-style: italic;
-margin: auto;
 }
 p{font-size: medium;
 font-weight: bolder;
