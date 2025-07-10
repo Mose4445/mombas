@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    font-style: normal;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    text-overflow: clip;
+    font-weight: bolder;
+    font-size: large;
+}
+Ol{
+text-align: center;
+font-style: italic;
+}
+h2{
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: inherit;
+}
+footer{
+    font-style: italic;
+    line-height: 2%;
+}

@@ -1,0 +1,22 @@
+title{ text-align: center;
+font-size: large;
+font-style: bold;
+}
+body{background-color:white;
+font-weight: lighter;
+margin: auto;
+box-shadow: none;
+}
+h1{text-align: center;
+font-size: medium;
+font-style: italic;
+margin: auto;
+}
+p{font-size: medium;
+font-style: normal;
+}
+footer{text: indent 0;
+text-align: center;
+font-size: small;
+font-style: italic;
+}
