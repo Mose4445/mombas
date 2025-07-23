@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Phone Book</title>
+        <link rel="stylesheet"href="make.css">
+    </head>
+    <body>
+        <h1> Phone Book</h1>
+        <table>
+           <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+           </tr>
+           <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+           </tr>
+           <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+           </tr>
+           <tr>
+           <td>*</td>
+           <td>0</td>
+           <td>#</td>
+           </tr>
+                    
+        </table>
+        <div class="form-container">
+        <form id="phoneForm">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="text" id="phone" placeholder="Enter Phone Number" required>
+            <button type="submit">Add Contact</button>
+        </form>
+    </div>
+     <div class="form-container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+     <h3>Contacts</h3>
+    <h2>Ordered Contact List</h2>
+    <ol>
+        <li>John Doe - 0723 456 789</li>
+        <li>Jane Smith - 0734 567 890</li>
+        <li>Michael Brown - 0712 345 678</li>
+        <li>Emily Davis - 0756 789 123</li>
+        <li>Chris Johnson - 0700 123 456</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <h4>Unordered Contact List</h4>
+    <ul>
+        <li>Alice Walker - 0745 678 901</li>
+        <li>Robert King - 0722 111 333</li>
+        <li>Linda White - 0733 222 444</li>
+        <li>David Green - 0711 555 777</li>
+        <li>Sophia Hill - 0709 888 999</li>
+    </ul>
+    </body>
+</html>
