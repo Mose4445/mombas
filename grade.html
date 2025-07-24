@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input {
+            padding: 10px;
+            width: 90%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 12px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Grade Calculator</h1>
+    <div class="container">
+        <input type="text" id="name" placeholder="Enter Student Name">
+        <input type="number" id="math" placeholder="Enter Math Marks (0-100)">
+        <input type="number" id="science" placeholder="Enter Science Marks (0-100)">
+        <input type="number" id="english" placeholder="Enter English Marks (0-100)">
+        <button onclick="calculateGrade()">Calculate Grade</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateGrade() {
+            const name = document.getElementById('name').value;
+            const math = parseFloat(document.getElementById('math').value);
+            const science = parseFloat(document.getElementById('science').value);
+            const english = parseFloat(document.getElementById('english').value);
+
+            if (!name || isNaN(math) || isNaN(science) || isNaN(english)) {
+                alert("Please fill in all fields correctly!");
+                return;
+            }
+
+            const average = ((math + science + english) / 3).toFixed(2);
+            let grade = '';
+
+            if (average >= 90) grade = 'A';
+            else if (average >= 80) grade = 'B';
+            else if (average >= 70) grade = 'C';
+            else if (average >= 60) grade = 'D';
+            else grade = 'F';
+
+            document.getElementById('result').innerHTML = 
+                `${name}'s Average: ${average} <br> Grade: ${grade}`;
+        }
+    </script>
+</body>
+</html>
